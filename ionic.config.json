@@ -1,0 +1,7 @@
+{
+  "name": "Reciclica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
