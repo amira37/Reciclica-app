@@ -1,9 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>pickup-call</ion-title>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup-call</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+<img src="assets\map.png" width="700" height="350"/>
+<ion-card>
+<ion-card-content>
+<p>Address: No51 Ang.Juma</p>
+<p>Complement: Gonar Ganye 222</p>
+<p>Neigborhood: Albany Street</p>
+<p>Zip code: 10432</p>
+<p>City Name: Zaria</p>
+</ion-card-content>
+</ion-card>
+<ion-list>
+  
+  <ion-item lines="inset">
+    <ion-label position="floating">
+      Notes
+    </ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+</ion-list>
+<ion-button color="success" size="full" (click)="newPickUpCall()">Create pickup call</ion-button>
 </ion-content>
