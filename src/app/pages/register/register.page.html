@@ -44,7 +44,7 @@
       </ion-item>
       <ion-item>
         <ion-label position="floating">Confirm Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="repeatPassword"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Phone Number</ion-label>
@@ -87,5 +87,5 @@
         </ion-item>
       </ion-card-content>
       </ion-card>
-      <ion-button size="full" color="light" (click)="register()">Register</ion-button>
+      <ion-button size="full" color="light" (click)="register()" [disabled]="!form.valid">Register</ion-button>
 </ion-content>
